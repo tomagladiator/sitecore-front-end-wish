@@ -6,9 +6,3 @@
     src: url('#{$fonts-path}roboto-regular.woff2') format('woff2'),
          url('#{$fonts-path}roboto-regular.woff') format('woff'),;
 }
-
-@font-face {
-    font-family: roboto-black;
-    src: url('#{$fonts-path}roboto-black.woff2') format('woff2'),
-         url('#{$fonts-path}roboto-black.woff') format('woff'),;
-}

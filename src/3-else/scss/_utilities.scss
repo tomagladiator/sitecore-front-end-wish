@@ -88,14 +88,6 @@
     text-transform: capitalize !important;
 }
 
-.U--bold {
-    font-weight: bold !important;
-}
-
-.U--italic {
-    font-style: italic !important;
-}
-
 .U--underline {
     text-decoration: underline !important;
 }
@@ -175,7 +167,7 @@
     }
 }
 
-@include generate-fonts((roboto-regular $roboto-regular, roboto-black $roboto-black));
+@include generate-fonts((roboto-regular $roboto-regular,));
 
 //  fonts-size
 @for $fontSize from 9 through 30 {
@@ -200,105 +192,24 @@
 //  flexbox
 .U--flex {
     display: flex !important;
-
-    &.U--flex-justify-center {
-        justify-content: center !important;
-    }
-
-    &.U--flex-justify-between {
-        justify-content: space-between !important;
-    }
-
-    &.U--flex-justify-end {
-        justify-content: flex-end !important;
-    }
-
-    &.U--flex-align-center {
-        align-items: center !important;
-    }
-
-    &.U--flex-wrap {
-        flex-wrap: wrap !important;
-    }
 }
 
-// breakpoint
-@mixin breakpoint-small {
-	@media (min-width: #{$breakpoint-small}){
-		@content;
-	}
+.U--flex-justify-center {
+    justify-content: center !important;
 }
 
-@mixin breakpoint-medium {
-	@media (min-width: #{$breakpoint-medium}){
-		@content;
-	}
+.U--flex-justify-between {
+    justify-content: space-between !important;
 }
 
-@mixin breakpoint-large {
-	@media (min-width: #{$breakpoint-large}){
-		@content;
-	}
+.U--flex-justify-end {
+    justify-content: flex-end !important;
 }
 
-.U--small-only {
-    @include breakpoint-medium {
-        display: none !important;
-    }
+.U--flex-align-center {
+    align-items: center !important;
 }
 
-.U--small-medium-only {
-    @include breakpoint-large {
-        display: none !important;
-    }
-}
-
-.U--medium-only {
-    display: none !important;
-
-    @include breakpoint-medium {
-        display: block !important;
-    }
-
-    @include breakpoint-large {
-        display: none !important;
-    }
-}
-
-.U--medium-large-only {
-    display: none !important;
-
-    @include breakpoint-medium {
-        display: block !important;
-    }
-}
-
-.U--large-only {
-    display: none !important;
-
-    @include breakpoint-large {
-        display: block !important;
-    }
-}
-
-//  Accessibility
-.U--screen-reader-only {
-    clip: rect(0 0 0 0);
-    position: absolute;
-    overflow: hidden;
-    margin: -1px;
-    height: 1px;
-    padding: 0;
-    width: 1px;
-    border: 0;
-
-    &.is-focusable:active,
-    &.is-focusable:focus {
-        overflow: visible;
-        position: static;
-        height: auto;
-        width: auto;
-        clip: auto;
-        margin: 0;
-    }
+.U--flex-wrap {
+    flex-wrap: wrap !important;
 }
