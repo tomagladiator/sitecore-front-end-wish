@@ -1,0 +1,25 @@
+{
+  "name": "sitecore-front-end-wish",
+  "version": "1.0.0",
+  "description": "minimalist structure",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomagladiator/sitecore-front-end-wish.git"
+  },
+  "keywords": [
+    "sitecore",
+    "habitat",
+    "gulp",
+    "architecture"
+  ],
+  "author": "https://www.constraintsolver.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomagladiator/sitecore-front-end-wish/issues"
+  },
+  "homepage": "https://github.com/tomagladiator/sitecore-front-end-wish#readme"
+}
